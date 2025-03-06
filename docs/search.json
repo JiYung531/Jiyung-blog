@@ -19,5 +19,19 @@
     "title": "Post With Code",
     "section": "",
     "text": "This is a post with executable code.\n\nimport numpy as np\n\na = np.arange(10)\na\n\narray([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "docs/welcome/index.html",
+    "href": "docs/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   }
 ]

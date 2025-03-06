@@ -9,7 +9,7 @@
 <meta name="author" content="Harlow Malloc">
 <meta name="dcterms.date" content="2025-03-06">
 
-<title>quarto-input3bb06400ee7af894 – Jiyung-blog</title>
+<title>quarto-inputb527c07cda38890c – Jiyung-blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -207,11 +207,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="팔머-펭귄-데이터-확인" class="level2">
 <h2 class="anchored" data-anchor-id="팔머-펭귄-데이터-확인">1. 팔머 펭귄 데이터 확인</h2>
 <p>먼저 팔머 펭귄 데이터 불러오기</p>
-<div id="317793c7" class="cell" data-execution_count="1">
+<div id="6b8f8450" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> palmerpenguins <span class="im">import</span> load_penguins</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>peng <span class="op">=</span> load_penguins()</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>peng</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="7">
+<div class="cell-output cell-output-display" data-execution_count="1">
 <div>
 
 
@@ -413,23 +413,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 <p>이후 팔머 펭귄의 종, 서식 섬, 성별 확인</p>
-<div id="d6ff5df4" class="cell" data-execution_count="2">
+<div id="eefa6d0b" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span>(peng[<span class="st">'species'</span>]) <span class="co"># 어떤 종 있는지 확인</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="8">
+<div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>{'Adelie', 'Chinstrap', 'Gentoo'}</code></pre>
 </div>
 </div>
 <p>펭귄의 종은 Adelie, Chinstrap, Gentoo 의 세 종류 확인 가능.</p>
-<div id="282c3eed" class="cell" data-execution_count="3">
+<div id="f13b4f82" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span>(peng[<span class="st">'island'</span>]) <span class="co"># 어떤 섬 있는지 확인</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="9">
+<div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>{'Biscoe', 'Dream', 'Torgersen'}</code></pre>
 </div>
 </div>
 <p>펭귄이 서식하는 섬은 Biscoe, Dream, Torgersen 으로 확인 가능.</p>
-<div id="b3b71222" class="cell" data-execution_count="4">
+<div id="56b47b1d" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span>(peng[<span class="st">'sex'</span>]) <span class="co"># 어떤 성별 있는지 확인</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="10">
+<div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>{'female', 'male', nan}</code></pre>
 </div>
 </div>
@@ -442,7 +442,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="팔머-펭귄-데이터-계산-함수-작성-및-데이터-프레임-정리">2. 팔머 펭귄 데이터 계산 함수 작성 및 데이터 프레임 정리</h2>
 <p>팔머 펭귄의 종별 특징을 확인하기 위해서, 숫자형 데이터의 경우 평균값, 최댓값, 최솟값을 확인. 이외 데이터인 서식 섬과 성별은 각각의 해당 개체 수 확인.</p>
 <p>위 데이터들을 확인할 수 있는 함수 작성.</p>
-<div id="54284a44" class="cell" data-execution_count="5">
+<div id="5acc50a6" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">#  모든 펭귄 종에 대해 평균, 최댓값, 최솟값 및 개체 수를 계산하는 함수</span></span>
@@ -496,7 +496,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> species_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>만든 함수 통해서 각 펭귄 종에 대한 데이터 뽑아낸 후, 하나의 데이터 프레임으로 정리.</p>
-<div id="8d0225fb" class="cell" data-execution_count="6">
+<div id="70cf61f8" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 만든 함수 통해 세 종류 펭귄 데이터 구하기</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>peng_A_df <span class="op">=</span> summarize_species(peng, <span class="st">'Adelie'</span>)</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>peng_C_df <span class="op">=</span> summarize_species(peng, <span class="st">'Chinstrap'</span>)</span>
@@ -512,7 +512,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>pd.set_option(<span class="st">'display.max_columns'</span>, <span class="va">None</span>)</span>
 <span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>pd.set_option(<span class="st">'display.width'</span>, <span class="dv">1000</span>)</span>
 <span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>peng_final</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="12">
+<div class="cell-output cell-output-display" data-execution_count="6">
 <div>
 
 

@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Jiyung's blog"
 image: profile.jpg
 about:
   template: jolla
@@ -12,8 +12,8 @@ about:
       href: https://linkedin.com
     - icon: github
       text: Github
-      href: https://github.com
+      href: https://github.com/JiYung531/Jiyung-blog
 
 ---
 
-About this blog
+Hi!

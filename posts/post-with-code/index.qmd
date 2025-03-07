@@ -6,6 +6,17 @@ categories: [news, code, analysis]
 image: "image.jpg"
 ---
 
+![](image.jpg)
 
 
 
+This is a post with executable code.
+
+
+
+```{python}
+import numpy as np
+
+a = np.arange(10)
+a
+```

@@ -1,0 +1,12 @@
+{
+  "hash": "9fffbdd43464563ebaa539b6057ddbf5",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"나의 첫 블로그 포스트\"\nauthor: \"Jiyung Hwang\"\ndate: \"2025-03-07\"\ncategories: [python, pandas, numpy]\nimage: \"https://lab.statisticsplaybook.com/wp-content/uploads/2025/02/lab-main2.png\"\n---\n\n\n\n## 파이썬 데이터 분석\n\n### 넘파이 \n\n넘파이 패키지를 불러옵시다!\n\n::: {#ab68343f .cell execution_count=1}\n``` {.python .cell-code}\nimport numpy as np\n\na = np.array([3, 2, 15])\na\n```\n\n::: {.cell-output .cell-output-display execution_count=5}\n```\narray([ 3,  2, 15])\n```\n:::\n:::\n\n\n### 판다스\n\n판다스 패키지를 불러옵시다!\n\n::: {#2c8673f1 .cell execution_count=2}\n``` {.python .cell-code}\nimport pandas as pd\n```\n:::\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Jiyung-blog",
     "section": "",
-    "text": "&lt;팔머 펭귄 데이터 분석&gt;\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nPost-with-code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 3, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "나의 첫 블로그 포스트\n\n\n\n\n\n\npython\n\n\npandas\n\n\nnumpy\n\n\n\n\n\n\n\n\n\nMar 7, 2025\n\n\nJiyung Hwang\n\n\n\n\n\n\n\n\n\n\n\n\n&lt;팔머 펭귄 데이터 분석&gt;\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nPost-with-code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 6, 2025\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nMar 3, 2025\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/welcome/index.html",
@@ -54,5 +54,19 @@
     "title": "<팔머 펭귄 데이터 분석>",
     "section": "3. 최종 데이터 통한 팔머 펭귄 종별 특징 분석",
     "text": "3. 최종 데이터 통한 팔머 펭귄 종별 특징 분석\n\n1) 분석 방향성 정하기\n\n- 분석 가능 여부\n\n먼저, 각 종들의 성비가 비슷함(34:34, 73:73, 61:58)을 통해 성비의 균형에 따라 각 펭귄들의 데이터가 비교할 가치가 있음.\n또한 각 데이터가 입력된 년도가 비슷하기에 비교할 가치가 있음.\n\n\n\n- 분석 방향성\n\n평균데이터를 통해서 각 펭귄 종들의 신체적 특징 비교 가능.\n최대, 최소 데이터를 통해서 이상치를 비교할 수 있음.\n\n\n\n\n\n2) 데이터 비교\n\n- 평균 데이터\n\n해당 데이터를 통해 일반적으로 부리는 Chinstrap이 크고, 다른 종들은 상대적으로 작음을 확인 가능.\n또한 날개 길이와 몸무게는 Gentoo가 가장 크기 때문에 상대적으로 덩치가 큰 편임. 반대로, Adelie의 덩치가 상대적으로 작은 편임을 알 수 있음.\n\n\n- 최대, 최소 데이터\n\n\n최대, 최소 데이터를 통해서는 이상치가 Gentoo와 Adelie에 많이 있음을 확인 가능.\nAdelie는 세 지역에 고루 분포해있기 때문에 이상치가 있을 확률이 높고, Gentoo는 한 지역에만 있기 때문에 종 자체가 자랄 때 변동폭이 있음을 유추 가능.\n추가로 Chinstrap은 종이 평균적으로 비슷하게 자람을 확인 가능.\n\n\n\n\n3) 분석 결과\n\n부리 길이\n\nChinstrap &gt; Gentoo &gt; Adelie\n\n부리 깊이\n\nChinstrap &gt; Adelie &gt; Gentoo\n\n날개 길이, 몸무게\n\nGentoo &gt; Chinstrap &gt; Adelie\n\n이상치 존재 가능성\n\nGentoo &gt; Adelie &gt; Chinstrap\n\n\n\n4) 추가 분석 제안\n\n‘Adelie’ 종은 3가지 섬에 모두 살기 때문에 해당 종끼리의 데이터 비교를 통해 사는 환경에 따라 달라지는 경향을 확인 가능함."
+  },
+  {
+    "objectID": "posts/first_blog_post/index.html",
+    "href": "posts/first_blog_post/index.html",
+    "title": "나의 첫 블로그 포스트",
+    "section": "",
+    "text": "넘파이 패키지를 불러옵시다!\n\nimport numpy as np\n\na = np.array([3, 2, 15])\na\n\narray([ 3,  2, 15])\n\n\n\n\n\n판다스 패키지를 불러옵시다!\n\nimport pandas as pd"
+  },
+  {
+    "objectID": "posts/first_blog_post/index.html#파이썬-데이터-분석",
+    "href": "posts/first_blog_post/index.html#파이썬-데이터-분석",
+    "title": "나의 첫 블로그 포스트",
+    "section": "",
+    "text": "넘파이 패키지를 불러옵시다!\n\nimport numpy as np\n\na = np.array([3, 2, 15])\na\n\narray([ 3,  2, 15])\n\n\n\n\n\n판다스 패키지를 불러옵시다!\n\nimport pandas as pd"
   }
 ]
